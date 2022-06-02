@@ -1,0 +1,113 @@
+/* === FONTS === */
+// @import 'fonts';
+
+$fontfamily--primary: '';
+/* === / FONTS === */
+
+/* === VARIABLES === */
+$limited: 1380px;
+
+$sm: 576.98px;
+$md: 768.98px;
+$lg: 992.98px;
+$xl: 1200.98px;
+$xxl: 1400.98px;
+
+$fw-light: 300;
+$fw-regular: 400;
+$fw-medium: 500;
+$fw-semibold: 600;
+$fw-bold: 700;
+$fw-extrabold: 800;
+
+$color-yellow: #E1FC52;
+$color-white: #fff;
+$color-black: #000;
+
+$text-color--primary: #fff;
+$text-color--secondary: #002E50;
+/* === / VARIABLES === */
+
+/* === NULLSTYLE === */
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*,*:before,*:after{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+    min-height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+body{
+	font-family: $fontfamily--primary;
+	color: $text-color--primary;
+	font-size: 16px;
+	font-weight: $fw-regular;
+
+	// &._lock{
+	// 	overflow: hidden;
+	// }
+}
+
+input,button,textarea{font-family: $fontfamily--primary;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button:-moz-focus-inner{padding: 0;border: 0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
+/* === / NULLSTYLE === */
+
+/* === WRAPPER === */
+.page-wrapper{width: 100%;min-height: 100%;overflow: hidden;
+
+}
+/* === / WRAPPER === */
+
+/* === MAIN-GRID === */
+.outer{
+	padding: 0 20px;
+}
+.container{max-width: $limited;margin: 0 auto;width: 100%;
+	@media (max-width: $lg){max-width: none;}
+}
+/* === / MAIN-GRID === */
+
+/* === COMONN ===*/
+.page{
+	flex: 1 1 auto;
+	overflow: hidden;
+}
+/* === / COMONN ===*/
+
+/* === IMPORT-BLOCKS ===*/
+@import "../blocks/header/header";
+@import "../blocks/footer/footer";
+@import "../blocks/fullscreen/fullscreen";
+/* === / IMPORT-BLOCKS ===*/
+
+/* === IMPORT-BLOCKS ===*/
+
+/* === / IMPORT-BLOCKS ===*/
